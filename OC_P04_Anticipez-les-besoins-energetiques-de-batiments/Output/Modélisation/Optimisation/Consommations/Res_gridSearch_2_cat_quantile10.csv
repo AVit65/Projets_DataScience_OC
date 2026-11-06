@@ -1,0 +1,25 @@
+,model,scoring,train_score,val_score mean,val_score std,test_score,best_coltransf,best_model_params
+0,DummyRegressor,root_mean_squared_error,23.58,21.62,9.49,13.62,ct_0_robust_none_robust_onehot,"{'regressor__strategy': 'mean', 'transformer': FunctionTransformer()}"
+1,DummyRegressor,mean_absolute_error,9.25,9.26,1.31,8.31,ct_0_robust_none_robust_onehot,"{'regressor__strategy': 'mean', 'transformer': FunctionTransformer()}"
+2,DummyRegressor,r2_score,0.0,-0.02,0.03,-0.0,ct_0_robust_none_robust_onehot,"{'regressor__strategy': 'mean', 'transformer': FunctionTransformer()}"
+3,LinearRegression,root_mean_squared_error,13.54,14.91,4.95,10.73,ct_6_minmax_log_minmax_onehot,{'transformer': FunctionTransformer()}
+4,LinearRegression,mean_absolute_error,5.63,5.98,0.76,5.13,ct_6_minmax_log_minmax_onehot,{'transformer': FunctionTransformer()}
+5,LinearRegression,r2_score,0.67,0.25,0.7,0.38,ct_6_minmax_log_minmax_onehot,{'transformer': FunctionTransformer()}
+6,BaggingLinearRegression,root_mean_squared_error,14.72,16.37,5.56,9.14,ct_11_Standard_log_Standard_target,"{'regressor__max_features': 0.8, 'regressor__max_samples': 0.8, 'regressor__n_estimators': 500, 'transformer': FunctionTransformer()}"
+7,BaggingLinearRegression,mean_absolute_error,6.07,6.4,0.65,5.44,ct_11_Standard_log_Standard_target,"{'regressor__max_features': 0.8, 'regressor__max_samples': 0.8, 'regressor__n_estimators': 500, 'transformer': FunctionTransformer()}"
+8,BaggingLinearRegression,r2_score,0.61,0.19,0.61,0.55,ct_11_Standard_log_Standard_target,"{'regressor__max_features': 0.8, 'regressor__max_samples': 0.8, 'regressor__n_estimators': 500, 'transformer': FunctionTransformer()}"
+9,ElasticNet,root_mean_squared_error,13.52,14.69,5.05,10.42,ct_6_minmax_log_minmax_onehot,"{'regressor__alpha': 0.001, 'regressor__l1_ratio': 0.2, 'transformer': FunctionTransformer()}"
+10,ElasticNet,mean_absolute_error,5.33,5.81,0.75,4.84,ct_6_minmax_log_minmax_onehot,"{'regressor__alpha': 0.001, 'regressor__l1_ratio': 0.2, 'transformer': FunctionTransformer()}"
+11,ElasticNet,r2_score,0.67,0.3,0.62,0.41,ct_6_minmax_log_minmax_onehot,"{'regressor__alpha': 0.001, 'regressor__l1_ratio': 0.2, 'transformer': FunctionTransformer()}"
+12,SVR,root_mean_squared_error,12.12,11.6,6.86,7.63,ct_2_robust_log_robust_onehot,"{'regressor__C': 1, 'regressor__epsilon': 0.1, 'regressor__gamma': 0.01, 'transformer': PowerTransformer()}"
+13,SVR,mean_absolute_error,3.02,3.47,0.97,2.72,ct_2_robust_log_robust_onehot,"{'regressor__C': 1, 'regressor__epsilon': 0.1, 'regressor__gamma': 0.01, 'transformer': PowerTransformer()}"
+14,SVR,r2_score,0.74,0.72,0.11,0.68,ct_2_robust_log_robust_onehot,"{'regressor__C': 1, 'regressor__epsilon': 0.1, 'regressor__gamma': 0.01, 'transformer': PowerTransformer()}"
+15,DecisionTree,root_mean_squared_error,14.3,13.76,4.59,8.27,ct_5_minmax_none_minmax_target,"{'regressor__max_depth': 20, 'regressor__max_features': 0.8, 'regressor__min_samples_leaf': 5, 'transformer': FunctionTransformer(func=<ufunc 'log1p'>, inverse_func=<ufunc 'expm1'>)}"
+16,DecisionTree,mean_absolute_error,3.44,4.45,0.84,3.71,ct_5_minmax_none_minmax_target,"{'regressor__max_depth': 20, 'regressor__max_features': 0.8, 'regressor__min_samples_leaf': 5, 'transformer': FunctionTransformer(func=<ufunc 'log1p'>, inverse_func=<ufunc 'expm1'>)}"
+17,DecisionTree,r2_score,0.63,0.46,0.37,0.63,ct_5_minmax_none_minmax_target,"{'regressor__max_depth': 20, 'regressor__max_features': 0.8, 'regressor__min_samples_leaf': 5, 'transformer': FunctionTransformer(func=<ufunc 'log1p'>, inverse_func=<ufunc 'expm1'>)}"
+18,RandomForest,root_mean_squared_error,7.38,13.2,5.65,8.85,ct_7_minmax_log_minmax_target,"{'regressor__max_depth': 10, 'regressor__min_samples_leaf': 1, 'regressor__n_estimators': 500, 'transformer': FunctionTransformer()}"
+19,RandomForest,mean_absolute_error,2.22,3.95,0.65,3.39,ct_7_minmax_log_minmax_target,"{'regressor__max_depth': 10, 'regressor__min_samples_leaf': 1, 'regressor__n_estimators': 500, 'transformer': FunctionTransformer()}"
+20,RandomForest,r2_score,0.9,0.46,0.43,0.58,ct_7_minmax_log_minmax_target,"{'regressor__max_depth': 10, 'regressor__min_samples_leaf': 1, 'regressor__n_estimators': 500, 'transformer': FunctionTransformer()}"
+21,XGBregressor,root_mean_squared_error,3.88,10.66,5.14,6.94,ct_0_robust_none_robust_onehot,"{'regressor__max_depth': 3, 'regressor__n_estimators': 100, 'regressor__subsample': 1, 'transformer': FunctionTransformer(func=<ufunc 'log1p'>, inverse_func=<ufunc 'expm1'>)}"
+22,XGBregressor,mean_absolute_error,1.23,3.25,0.66,2.87,ct_0_robust_none_robust_onehot,"{'regressor__max_depth': 3, 'regressor__n_estimators': 100, 'regressor__subsample': 1, 'transformer': FunctionTransformer(func=<ufunc 'log1p'>, inverse_func=<ufunc 'expm1'>)}"
+23,XGBregressor,r2_score,0.97,0.74,0.09,0.74,ct_0_robust_none_robust_onehot,"{'regressor__max_depth': 3, 'regressor__n_estimators': 100, 'regressor__subsample': 1, 'transformer': FunctionTransformer(func=<ufunc 'log1p'>, inverse_func=<ufunc 'expm1'>)}"

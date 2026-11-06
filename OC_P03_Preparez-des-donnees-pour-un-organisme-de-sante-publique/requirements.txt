@@ -1,0 +1,10 @@
+ipython==8.25.0
+matplotlib==3.10.1
+missigno==0.5.2
+numpy==1.26.4
+pandas==2.3.1
+plotly==5.24.1
+scikit-learn==1.4.2
+scipy==1.16.1
+seaborn==0.13.2
+statsmodels==0.14.5
